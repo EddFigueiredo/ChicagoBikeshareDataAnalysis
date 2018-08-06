@@ -6,6 +6,5 @@ Clone the repo, and copy chicago.csv file available [here](https://s3.amazonaws.
 
 Install the pependencies with pip:
 - matplotlib
-- pyplot
 
 Run chicago_bikeshare.py
