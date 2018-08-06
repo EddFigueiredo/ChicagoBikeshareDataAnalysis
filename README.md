@@ -8,3 +8,11 @@ Install the pependencies with pip:
 - matplotlib
 
 Run chicago_bikeshare.py
+
+On Docker pull the image eddfigueiredo/bike-share-analysis:latest and run with:
+
+docker run -ti --rm eddfigueiredo/bike-share-analysis:latest
+
+Or build your own image with the Dockerfile on project root directory. Don't forget to add `chicago.csv` file.
+
+For now running on docker doesn't show the graph with matplotlib. =- /
