@@ -273,14 +273,14 @@ def mean_value(duration_list: list):
       Args:
           duration_list: The first parameter. Must be a list
       Returns:
-          An float representing the mean value of duration_list
+          A float representing the mean value of duration_list
     """
     total = 0
     for duration in duration_list:
         total += int(duration)
     return float(total/len(duration_list))
 
-def isEven(durations: list, total: int):
+def is_even(durations: list, total: int):
     """
       Args:
           durations: The first parameter. Must be a list
@@ -290,7 +290,7 @@ def isEven(durations: list, total: int):
     """
     return durations[round(total//2)] + durations[round(total//2+1)] / 2
 
-def isOdd(durations: list, total: int):
+def is_odd(durations: list, total: int):
     """
       Args:
           durations: The first parameter. Must be a list
@@ -311,8 +311,8 @@ def median_value(duration_list: list):
     total = len(duration_list)
     durations = [int(duration) for duration in duration_list]
     median = 'even' if total % 2 == 0 else 'odd'
-    oddOrEven = {'odd': isOdd, 'even': isEven}
-    return oddOrEven[median](durations, total)
+    odd_or_even = {'odd': is_odd, 'even': is_even}
+    return odd_or_even[median](durations, total)
 
 def variation(duration_list: list):
     """
